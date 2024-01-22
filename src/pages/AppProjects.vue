@@ -2,9 +2,8 @@
   <h1>Projects List</h1>
   <ul>
     <li v-for="project in store.projects" :key="project.id">
-      <router-link :to="{name: 'project', params: {slug: project.slug}}" class="btn btn-primary"></router-link>
-      
-      {{ project.title }}</li>
+      <router-link :to="{name: 'project', params: {slug: project.slug}}" class="btn btn-primary my-1">{{ project.title }}</router-link>
+    </li>
   </ul>
 </template>
 

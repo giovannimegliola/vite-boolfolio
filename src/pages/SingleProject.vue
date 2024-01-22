@@ -1,6 +1,7 @@
 <template>
-  <h1>single project</h1>
-  {{ project.title }}
+  <h1>{{ project.title }}</h1>
+  
+  {{ project.body }}
 </template>
 
 <script>
@@ -18,6 +19,7 @@ import {store} from '../store.js';
       getProjectData(){
         axios.get (this.store.apiUrl + 'projects/' + this.$route.params.slug).then((res) => {
           console.log(res.data);
+          this.project = res.data.results;
         })
       }
     },

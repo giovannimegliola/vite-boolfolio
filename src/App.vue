@@ -1,7 +1,6 @@
 <template>
   <AppHeader></AppHeader>
   <router-view></router-view>
-  <h1>hello</h1>
 </template>
 
 <script>
@@ -11,17 +10,18 @@ import {store} from './store.js';
 export default {
   
     name: "App",
+    data() {
+      return {
+        // store,
+      }
+
+    },
     components: {
     
       AppHeader
 
     },
-    data() {
-      return {
-        store,
-      }
-
-    },
+    
     methods: {
       getApiTest() {
         axios.get(this.store.apiUrl + 'projects').then((res) => {
