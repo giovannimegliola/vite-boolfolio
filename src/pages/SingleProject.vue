@@ -1,9 +1,13 @@
 <template>
-  <h1>{{ project.title }}</h1>
+  <div class="container">
+    <h1>{{ project.title }}</h1>
   <img :src="`${store.imgPath}${project.image}`" :alt="project.title"> 
   <div>
     {{ project.body }}
   </div>
+
+  </div>
+  
   
 </template>
 
@@ -23,6 +27,8 @@ import {store} from '../store.js';
         axios.get (this.store.apiUrl + 'projects/' + this.$route.params.slug).then((res) => {
           console.log(res.data);
           this.project = res.data.results;
+        }).catch((err) => {
+          console.log(err);
         })
       }
     },

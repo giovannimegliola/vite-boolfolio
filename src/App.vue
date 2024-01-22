@@ -1,11 +1,13 @@
 <template>
   <AppHeader></AppHeader>
   <router-view></router-view>
+  <AppFooter></AppFooter>
 </template>
 
 <script>
 import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
 import {store} from './store.js';
 export default {
   
@@ -18,7 +20,8 @@ export default {
     },
     components: {
     
-      AppHeader
+      AppHeader,
+      AppFooter
 
     },
     
