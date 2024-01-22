@@ -1,14 +1,19 @@
 <template>
+  <AppHeader></AppHeader>
   <router-view></router-view>
+  <h1>hello</h1>
 </template>
 
 <script>
 import axios from 'axios';
-import {store} from '.data/store.js'
+import AppHeader from './components/AppHeader.vue';
+import {store} from './store.js';
 export default {
   
     name: "App",
     components: {
+    
+      AppHeader
 
     },
     data() {
@@ -34,6 +39,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "./styles/partials/variables" as *;
+// @use "./styles/partials/variables" as *;
 
 </style>
