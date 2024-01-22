@@ -1,14 +1,11 @@
 <template>
   <div class="container">
-    <h1>{{ project.title }}</h1>
+    <h1 class="text-primary my-3">{{ project.title }}</h1>
   <img :src="`${store.imgPath}${project.image}`" :alt="project.title"> 
   <div>
     {{ project.body }}
   </div>
-
   </div>
-  
-  
 </template>
 
 <script>
