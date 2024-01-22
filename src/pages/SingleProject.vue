@@ -1,7 +1,10 @@
 <template>
   <h1>{{ project.title }}</h1>
+  <img :src="`${store.imgPath}${project.image}`" :alt="project.title"> 
+  <div>
+    {{ project.body }}
+  </div>
   
-  {{ project.body }}
 </template>
 
 <script>
@@ -30,5 +33,8 @@ import {store} from '../store.js';
 </script>
 
 <style lang="scss" scoped>
+img{
+  max-width: 300px;
+}
 
 </style>
