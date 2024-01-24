@@ -1,22 +1,22 @@
 <template>
   <form class="container" @submit.prevent="submitForm">
     <div class="mb-3">
-    <label for="name" class="form-label">Your name</label>
+    <label for="name" class="form-label">Name</label>
     <input type="text" class="form-control" id="name" aria-describedby="nameHelp" v-model="name">
     <div id="nameHelp" class="form-text">Insert your name</div>
   </div>
   <div class="mb-3">
-    <label for="email" class="form-label">Email address</label>
+    <label for="email" class="form-label">Email</label>
     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" v-model="email">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
-    <label for="address" class="form-label">Your address</label>
+    <label for="address" class="form-label">Address</label>
     <input type="text" class="form-control" id="address" aria-describedby="addressHelp" v-model="address">
     <div id="addressHelp" class="form-text">Insert your address</div>
   </div>
   <div class="mb-3">
-    <label for="message" class="form-label">Your message</label>
+    <label for="message" class="form-label">Message</label>
     <textarea name="message" id="message" class="form-control" cols="30" rows="10" v-model="message"></textarea>
     <div id="messageHelp" class="form-text">Insert your message</div>
   </div>

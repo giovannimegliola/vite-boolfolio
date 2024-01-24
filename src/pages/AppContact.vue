@@ -1,5 +1,8 @@
 <template>
-  <h1>Contact us</h1>
+  <div class="container">
+    <h1>Contact us</h1>
+  </div>
+  
   <ContactForm ></ContactForm>
 
 </template>
